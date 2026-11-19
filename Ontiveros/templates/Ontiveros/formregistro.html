@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="{% static 'Ontiveros/Estilos.css' %}">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Registra tus datos</h1>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <ul>
+                <li><a href="inicio">Inicio</a></li>
+                <li><a href="registro">Registros</a></li>
+                <li><a href="#">Six seven</a></li>
+                <li><a href="#">What a save</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<form> method="post">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" placeholder="Escribe tu nombre:" required>
+        <label>Apellido paterno</label>
+        <input type="text" nmae="apellidop" placeholder="Escribe tu apellido paterno..." required>
+        <label>Apellido materno:</label>
+        <input type="text" name="apellidom" placeholder="Escribe tu apellido materno...">
+        <label>Edad:</label>
+        <input type="number" name="edad" min="14" max="20" placeholder="Escribe tu edad..." required>
+        <button type="submit">Guardar</button>
+        
+</form>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>GG next</p>
+    </footer>
+
+</body>
+</html>
