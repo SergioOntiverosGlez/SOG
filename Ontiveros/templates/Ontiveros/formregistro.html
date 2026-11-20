@@ -28,13 +28,22 @@
 
 <form> method="post">
         <label>Nombre:</label>
-        <input type="text" name="nombre" placeholder="Escribe tu nombre:" required>
+        <input type="text" name="nombre" placeholder="Escribe tu nombre..." required>
         <label>Apellido paterno</label>
         <input type="text" nmae="apellidop" placeholder="Escribe tu apellido paterno..." required>
         <label>Apellido materno:</label>
         <input type="text" name="apellidom" placeholder="Escribe tu apellido materno...">
         <label>Edad:</label>
         <input type="number" name="edad" min="14" max="20" placeholder="Escribe tu edad..." required>
+        <label>Genero:</label>
+        <input type="radio" name="genero" value="Femenino">Femenino
+        <input type="radio" name="genero" value="Masculino">Masculino<br>
+        <label>Intereses:</label>
+        <input type="checkbox" name="Intereses" value="Fútbol">Futbol
+        <input type="checkbox" name="Intereses" value="Música">Musica
+        <input type="checkbox" name="Intereses" value="Videojuegos">Videojuegos
+        <input type="checkbox" name="Intereses" value="Salir a pasear">Salir a pasear
+
         <button type="submit">Guardar</button>
         
 </form>
